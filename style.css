@@ -8,6 +8,11 @@
     src: url("asset/font/DeltaDotumKR.ttf") format("truetype");
     font-weight: normal;
 }
+@font-face {
+    font-family: "DeltaGlassKR";
+    src: url("asset/font/DeltaGlassKR.ttf") format("truetype");
+    font-weight: normal;
+}
 
 * {
     margin-left: 10px;

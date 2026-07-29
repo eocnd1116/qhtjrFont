@@ -28,10 +28,12 @@
     <script>
         if (type==0) {
             document.write("<title>qhtjr's Font Catalogue</title>")
-            document.write("<p class='tTitle'>폰트 배포처</p><p>제가 제작한 폰트를 모아둔 곳입니다.<br>ㅇㅇㅇㅇ</p><hr>")
-            document.write("<p>DELTARUNE 한국어 패치 폰트:</p><br>&nbsp;&nbsp;")
-            document.write("<a href='"+link(1,0)+"' class='moveLink' style='font-family:\"DeltaDotumKR\",serif;font-size:40px;'>☞ 델타돋움체.TTF</a><br>&nbsp;&nbsp;")
+            document.write("<p class='tTitle'>폰트 카탈로그</p><p>제가 제작한 폰트를 모아둔 곳입니다.<br>제작자: qhtjr1116 <a href=\"https://x.com/qhtjr1116\">[트위터/X]</a></p><hr>")
+            document.write("<p>DELTARUNE 한국어 패치 폰트:</p>")
+            document.write("&nbsp;&nbsp&nbsp;&nbsp;<a href='"+link(1,0)+"' class='moveLink' style='font-family:\"DeltaDotumKR\",serif;font-size:40px;'>> 델타돋움체.TTF</a><br>")
+            document.write("&nbsp;&nbsp&nbsp;&nbsp;<a href='"+link(1,1)+"' class='moveLink' style='font-family:\"DeltaGlassKR\",serif;font-size:26pt;'>> 델타돋움체.TTF</a><br>")
         } else if (type==1) {
+            document.write("<p><a href='"+link(0,0)+"'>폰트 카탈로그로 돌아가기</a></p><br>")
             switch(n){
                 case 0:
                     document.write("<title>DeltaDotum.ttf</title>")
@@ -40,6 +42,25 @@
                     document.write("<p style='font-family:\"DeltaDotumKR\",serif;font-size:40px;'><textarea cols=\"50\" rows=\"10\" autofocus=\"\" style=\"margin-left: 32px;margin-bottom: 40px;padding-left: 10px;padding-top: 10px;font-size:40px;\">* 난 조용한 것들을 보면 화가 치밀어.</textarea>")
                     document.write("<br><a href=\"asset/font/DeltaDotumKR.ttf\" download>[파일 다운로드]</a></p>")
                     document.write("<hr><p class='tTitle' style='font-family:\"DeltaDotumKR\",serif;font-size:40px;'>라이선스</p>")
+                        document.write("<table><td align ='left'><p>범주</p></td><td align ='left'><p>여부 및 설명</p></td>")
+                        document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>상업적 이용</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>해당 폰트는 상업적 이용이 가능합니다.</br>표현하는 내용/매체는 상관치 않습니다.</p></p></td></tr>")
+                        document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>임베드</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>폰트 파일을 문서/게임/소프트웨어 등에 포함시키거나 웹 폰트로 이용할 수 있습니다.</p></p></td></tr>")
+                        document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>출처 표기</p></td><td><p class='tYes'>O 필수 아님<br><p class='tGray'>폰트의 그 출처/이름/저작자는 표기하지 않아도 됩니다.<br>(필수는 아니지만, qhtjrx@gmail.com으로 한번 연락주시면 기쁩니다.)</p></p></td></tr>")
+                        document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>수정 및 재배포</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>폰트를 수정 후 재배포할 수 있습니다.<br>만일 그러할 경우 OFL-1.1을 채택해야 합니다.</p></p></td></tr>")
+                        document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>단독 판매</p></td><td><p class='tNo'>X 금지<br><p class='tGray'>폰트 파일을 단독으로 유료 판매하는 경우에 해당하며,<br>임베드 범주의 경우는 그러하지 않습니다.</p></p></td></tr>")
+                        document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>이용으로 인한 피해</p></td><td><p class='tNo'>X 책임지지 않음<br><p class='tGray'>폰트의 이용으로 인한 피해나 손해가 생기더라도 일절 책임지지 않습니다.</p></p></td></tr>")
+
+                        document.write("</table>")
+                    document.write("</a>")
+                    document.write("<br><br>")
+                    break;
+                case 1:
+                    document.write("<title>DeltaDotum.ttf</title>")
+                    document.write("<p class='tTitle' style='font-family:\"DeltaGlassKR\",serif;font-size:26pt;'>델타돋움체.TTF</p><p style='font-family:\"DeltaGlassKR\",serif;font-size:26pt;margin-top:0px'>DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>윤디자인웹돋움의 스타일을 차용하면서도 뷁괧 같은 글자도 깔끔하게 지원하도록 설계했습니다.<br>")
+                    document.write("<p class='tDtail'>폰트 사이즈: 13pt(17.3333...px)의 배수<br>지원하는 한글: 11,172자<br>제작자: qhtjr1116</a><hr><br>")
+                    document.write("<p style='font-family:\"DeltaGlassKR\",serif;font-size:26pt;'><textarea cols=\"50\" rows=\"10\" autofocus=\"\" style=\"margin-left: 32px;margin-bottom: 26pt;padding-left: 10px;padding-top: 10px;font-size:26pt;\">옛날 옛적 그림자를 따라 어떤 전설이 전해져 내려왔다.</textarea>")
+                    document.write("<br><a href=\"asset/font/DeltaGlassKR.ttf\" download>[파일 다운로드]</a></p>")
+                    document.write("<hr><p class='tTitle' style='font-family:\"DeltaGlassKR\",serif;font-size:26pt;'>라이선스</p>")
                         document.write("<table><td align ='left'><p>범주</p></td><td align ='left'><p>여부 및 설명</p></td>")
                         document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>상업적 이용</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>해당 폰트는 상업적 이용이 가능합니다.</br>표현하는 내용/매체는 상관치 않습니다.</p></p></td></tr>")
                         document.write("<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>임베드</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>폰트 파일을 문서/게임/소프트웨어 등에 포함시키거나 웹 폰트로 이용할 수 있습니다.</p></p></td></tr>")
