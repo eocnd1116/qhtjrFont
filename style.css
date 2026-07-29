@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Galmuri9";
+    src: url("asset/font/Galmuri9.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "DeltaDotumKR";
+    src: url("asset/font/DeltaDotumKR.ttf") format("truetype");
+    font-weight: normal;
+}
+
+* {
+    margin-left: 10px;
+    overflow-y: scroll;
+    font-family: inherit; 
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    font-family: 'Galmuri9', serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    color:rgb(96, 148, 175);
+    margin-left: 0px;
+    transition: color 0.5s;
+}
+a:hover {
+    color:rgb(26, 78, 219);
+}
+
+hr {
+    height : 2px;
+    background-color : rgb(117, 148, 148);
+    border : 0;
+    margin-left:0px;
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+
+textarea {
+    outline: none;
+    border: none;
+    background-color: rgb(222, 226, 238);
+}
+
+/*ID n CLASS*/
+
+.tTitle {
+    font-size: 40px;
+    margin: 20px
+}
+
+.moveLink {
+    transition: color 0.5s, margin-left 0.3s;
+}
+.moveLink:hover {
+    margin-left: 20px;
+}
+
+.tDtail {
+    color:rgb(26, 78, 219);
+}
+.tGray {
+    color:rgb(117, 130, 163);
+}
+.tNo {
+    color:rgb(219, 26, 71);
+}
+.tYes {
+    color:rgb(67, 188, 110);
+}
