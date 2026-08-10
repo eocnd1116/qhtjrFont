@@ -13,6 +13,11 @@
     src: url("asset/font/DeltaGlassKR.ttf") format("truetype");
     font-weight: normal;
 }
+@font-face {
+    font-family: "DreamHeumulKR";
+    src: url("asset/font/DreamHeumulKR.ttf") format("truetype");
+    font-weight: normal;
+}
 
 * {
     margin-left: 10px;
