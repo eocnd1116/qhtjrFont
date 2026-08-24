@@ -1,0 +1,119 @@
+# 양식
+#   name : 앨범명
+#   list : 수록 폰트  (2차원 배열 - 0:카테고리명/1~:객체명)
+
+vol0:
+  name: "제1차 픽셀폰트보완계획"
+  date: "(현재 작업중...)"
+  list:
+    - - "DELTARUNE 한국어 패치 폰트"
+      - 0
+      - 1
+    - - "잡것들"
+      - 2
+
+
+
+# 양식:
+# fontN:
+#   goto   : 사이트 링크
+#   nameKr : 한국어명
+#   nameEn : 영어명
+#   ttfDir : .ttf 파일 위치
+#   info   : 설명
+#   size   : 사이즈pt  (정수)
+#   sizePx : 사이트px  (문자열)
+#   range  : 지원 범위 (배열)
+#   creator: 제작자
+#   pangram: 예제문
+#   tool   : 사용한 도구  (배열)
+#   patch  : 패치 노트    (배열)
+
+font0:
+  goto: [1,0]
+  nameKr: "델타돋움체"
+  nameEn: "DeltaDotumKR"
+  ttfDir: "asset/font/DeltaDotumKR.ttf"
+  info: "DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>윤디자인웹돋움의 스타일을 차용하면서도 뷁괧 같은 글자도 깔끔하게 지원하도록 해봤습니다."
+  size: 15
+  sizePx: "20"
+  range:
+    - Hangul
+    - Jamo
+    - Ascii
+  creator: "qhtjr1116"
+  pangram: "*난 조용한 것들을 보면 화가 치밀어."
+  tool:
+    - [https://github.com/exqt/pixel-font-maker, "pixel-font-maker", "exqt"]
+    - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
+    - [https://fontforge.org, "Fontforge", "George Williams"]
+    - ["", "옛한글", qhtjr (자체 개발)]
+  patch:
+    - ["2026-07-31", "배포 시작"]
+
+font1:
+  goto: [1,1]
+  nameKr: "델타글라스체"
+  nameEn: "DeltaGlassKR"
+  ttfDir: "asset/font/DeltaGlassKR.ttf"
+  info: "DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>고딕풍 세리프 디자인이면서 스테인드 글라스와 어울리도록 해봤습니다."
+  size: 15
+  sizePx: "20"
+  range:
+    - Hangul
+    - Ascii
+  creator: "qhtjr1116"
+  pangram: " 옛날 옛적 그림자를 따라 어떤 전설이 전해져 내려왔다."
+  tool:
+    - [https://github.com/exqt/pixel-font-maker, "pixel-font-maker", "exqt"]
+    - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
+    - [https://fontforge.org, "Fontforge", "George Williams"]
+  patch:
+    - ["2026-07-31", "배포 시작"]
+
+font2:
+  goto: [1,2]
+  nameKr: "드림흐물체"
+  nameEn: "DreamHeumulKR"
+  ttfDir: "asset/font/DreamHeumulKR.ttf"
+  info: "갈무리 9의 구조를 빌려 만든 폰트입니다.<br>자유분방하면서 흐물거리는 필기체의 느낌을 재현해 보았습니다."
+  size: 12
+  sizePx: "16"
+  range:
+    - Hangul
+    - Jamo
+    - Ascii
+  creator: "qhtjr1116"
+  pangram: "헌 쳇바퀴 탄 다람쥐는 흐물흐물~"
+  tool:
+    - [https://github.com/quiple/bithangul, "BitHangul", "quiple"]
+    - [https://github.com/kreativekorp/bitsnpicas, "Bits'N'Picas", "Kreative Software"]
+    - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
+  patch:
+    - ["2026-08-11", "배포 시작"]
+
+
+
+# 양식:
+#   name  : 범위명
+#   icoDir: 아이콘 .png 파일 위치
+
+rangeHangul:
+  name: "완성형 11,172자"
+  icoDir: "asset/icon/ico_hangul.png"
+
+rangeJamo:
+  name: "자모&nbsp; &nbsp; 51자"
+  icoDir: "asset/icon/ico_jamo.png"
+
+rangeAscii:
+  name: "ASCII &emsp;94자"
+  icoDir: "asset/icon/ico_ascii.png"
+
+rangeOldHangul_mix:
+  name: "옛한글-첫가끝 &nbsp; 254자 (1,638,750자)"
+  icoDir: "asset/icon/ico_oldhangul.png"
+
+rangeOldHangul_hanyangPua:
+  name: "옛한글-한양PUA 5,299자"
+  icoDir: "asset/icon/ico_oldhangul.png"

@@ -1,28 +1,8 @@
-@font-face {
-    font-family: "Galmuri9";
-    src: url("asset/font/Galmuri9.ttf") format("truetype");
-    font-weight: normal;
-}
-@font-face {
-    font-family: "DeltaDotumKR";
-    src: url("asset/font/DeltaDotumKR.ttf") format("truetype");
-    font-weight: normal;
-}
-@font-face {
-    font-family: "DeltaGlassKR";
-    src: url("asset/font/DeltaGlassKR.ttf") format("truetype");
-    font-weight: normal;
-}
-@font-face {
-    font-family: "DreamHeumulKR";
-    src: url("asset/font/DreamHeumulKR.ttf") format("truetype");
-    font-weight: normal;
-}
-
 * {
     margin-left: 10px;
     overflow-y: scroll;
     font-family: inherit; 
+    font-variant-numeric: tabular-nums;
 }
 *::-webkit-scrollbar {
     display: none;
@@ -31,11 +11,14 @@
 p {
     font-family: 'Galmuri9', serif;
     font-size: 20px;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     text-decoration-line: none;
-    color:rgb(96, 148, 175);
+    color:rgb(98, 146, 194);
     margin-left: 0px;
     transition: color 0.5s;
 }
@@ -45,7 +28,7 @@ a:hover {
 
 hr {
     height : 2px;
-    background-color : rgb(117, 148, 148);
+    background-color : rgb(98, 146, 194);
     border : 0;
     margin-left:0px;
 }
@@ -60,7 +43,7 @@ img {
 textarea {
     outline: none;
     border: none;
-    background-color: rgb(222, 226, 238);
+    background-color: rgb(232, 245, 247);
 }
 
 /*ID n CLASS*/
@@ -69,19 +52,26 @@ textarea {
     font-size: 40px;
     margin: 20px
 }
+.tVol {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color : rgb(239, 253, 255);
+}
 
 .moveLink {
     transition: color 0.5s, margin-left 0.3s;
 }
 .moveLink:hover {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .tDtail {
     color:rgb(26, 78, 219);
 }
 .tGray {
-    color:rgb(117, 130, 163);
+    color:rgb(98, 146, 194);
 }
 .tNo {
     color:rgb(219, 26, 71);
