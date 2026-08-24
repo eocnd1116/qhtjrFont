@@ -47,7 +47,6 @@ font0:
     - [https://github.com/exqt/pixel-font-maker, "pixel-font-maker", "exqt"]
     - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
     - [https://fontforge.org, "Fontforge", "George Williams"]
-    - ["", "옛한글", qhtjr (자체 개발)]
   patch:
     - ["2026-07-31", "배포 시작"]
 
