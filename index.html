@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qhtjr의 폰트 카탈로그</title>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -133,7 +132,7 @@
                     patch += ` &nbsp; ${hDir[0]} &nbsp; ${hDir[1]}`
                 }
 
-                document.body.insertAdjacentHTML("beforeend", `<title>${fDir.nameKr}.ttf</title>` +
+                document.body.insertAdjacentHTML("beforeend", `<title>qhtjr의 폰트 카탈로그 - ${fDir.nameKr}.ttf</title>` +
                 `<p class='tTitle' style='font-family:"${fDir.nameEn}",serif;font-size:${fDir.size*4}pt;'>${fDir.nameKr}</p><p style='font-family:"${fDir.nameEn}",serif;font-size:${fDir.size*2}pt;margin-top:0px'>${fDir.info}<br>` +
                 `<p class='tDtail'>폰트 사이즈: ${fDir.size}pt(${fDir.sizePx}px)의 배수<br>지원 범위:${range}제작자: ${fDir.creator}</a><hr><br>` +
                 
