@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Galmuri9';
+    src: url('asset/font/Galmuri9.ttf') format('truetype');
+}
+
 * {
     margin-left: 10px;
     overflow-y: scroll;
@@ -37,8 +42,7 @@ img {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
-  }
-
+}
 
 textarea {
     outline: none;

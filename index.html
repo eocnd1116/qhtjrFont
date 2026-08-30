@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qhtjr의 폰트 카탈로그</title>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -14,7 +15,7 @@
     <script>
         //Useful Function
         function link(_type, _num) {
-            return "https://eocnd1116.github.io/qhtjrFont/index.html?type="+(_type).toString()+"&n="+(_num).toString();
+            return "./index.html?type="+(_type).toString()+"&n="+(_num).toString();
         }
 
         //Params Load
@@ -70,13 +71,7 @@
                                 let fDir = fontInfo[`font${vDir.list[j][k]}`]
                                 
                                 //Font-Family Create
-                                document.createElement("style").textContent = `
-                                    @font-face {
-                                        font-family: "${fDir.nameEn}";
-                                        src: url("${fDir.ttfDir}") format("truetype");
-                                        font-weight: normal;
-                                    }`;
-                                document.head.appendChild(document.createElement("style"));
+                                document.head.insertAdjacentHTML("beforeend", `<style>@font-face { font-family: "${fDir.nameEn}"; src: url("${fDir.ttfDir}") format("truetype"); font-weight: normal; }</style>`);
                                 
                                 //Push Result
                                 result += ">&nbsp;<a href='" + link(fDir.goto[0],fDir.goto[1]) +
@@ -102,13 +97,15 @@
                 let fDir = fontInfo[`font${n}`]
 
                 //Font-Family Create
-                document.createElement("style").textContent = `
+                document.head.insertAdjacentHTML("beforeend", `
+                    <style>
                     @font-face {
-                    font-family: "${fDir.nameEn}";
-                    src: url("${fDir.ttfDir}") format("truetype");
-                    font-weight: normal;
-                    }`;
-                document.head.appendChild(document.createElement("style"));
+                        font-family: "${fDir.nameEn}";
+                        src: url("${fDir.ttfDir}") format("truetype");
+                        font-weight: normal;
+                    }
+                    </style>
+                `);
                 
                 let range = ""
                 for (let i=0; i<fDir.range.length;i++) {
@@ -165,3 +162,4 @@
         }
     </script>
 </head>
+</html>
