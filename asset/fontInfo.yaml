@@ -41,14 +41,16 @@ font0:
     - Hangul
     - Jamo
     - Ascii
+    - OldHangul_hanyangPua
   creator: "qhtjr1116"
-  pangram: "*난 조용한 것들을 보면 화가 치밀어."
+  pangram: "* 난 조용한 것들을 보면 화가 치밀어."
   tool:
     - [https://github.com/exqt/pixel-font-maker, "pixel-font-maker", "exqt"]
     - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
     - [https://fontforge.org, "Fontforge", "George Williams"]
   patch:
     - ["2026-07-31", "배포 시작"]
+    - ["2026-09-23", "한양PUA 지원"]
 
 font1:
   goto: [1,1]
