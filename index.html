@@ -118,18 +118,32 @@
                 }
 
                 let tool = ""
+                let im = 0
                 for (let i=0; i<fDir.tool.length;i++) {
                     let tDir = fDir.tool[i]
-                    tool += `<br>${i}. <a href="${tDir[0]}" target='_blank'>${tDir[1]}</a> by ${tDir[2]}`
+                    if (tDir[0] == "") {
+                        tool += `<br><br>${tDir[1]}`
+                        im += 1
+                    } else {
+                        tool += `<br> &nbsp; ${i-im}. <a href="${tDir[0]}" target='_blank'>${tDir[1]}</a> by ${tDir[2]}`
+                    }
                 }
 
                 let patch = ""
+                let after = "1446-10-09"
                 for (let i=0; i<fDir.patch.length;i++) {
                     let hDir = fDir.patch[i]
                     if (patch !== "") {
                         patch += "<br>"
                     }
-                    patch += ` &nbsp; ${hDir[0]} &nbsp; ${hDir[1]}`
+                    if (after == hDir[0]) {
+                        patch += ` &nbsp; <a style="color:#ffffff">${hDir[0]}</a>`
+                    }
+                    else {
+                        patch += ` &nbsp; ${hDir[0]}`
+                    }
+                    patch += ` &nbsp; ${hDir[1]}`
+                    after = hDir[0]
                 }
 
                 document.body.insertAdjacentHTML("beforeend", `<title>qhtjr의 폰트 카탈로그 - ${fDir.nameKr}.ttf</title>` +
@@ -147,7 +161,7 @@
                 "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>상업적 이용</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>해당 폰트는 상업적 이용이 가능합니다.</br>표현하는 내용/매체는 상관치 않습니다.</p></p></td></tr>" +
                 "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>임베드</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>폰트 파일을 문서/게임/소프트웨어 등에 포함시키거나 웹 폰트로 이용할 수 있습니다.</p></p></td></tr>" +
                 "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>출처 표기</p></td><td><p class='tYes'>O 필수 아님<br><p class='tGray'>폰트의 그 출처/이름/저작자는 표기하지 않아도 됩니다.<br>(필수는 아니지만, qhtjrx@gmail.com으로 한번 연락주시면 기쁩니다.)</p></p></td></tr>" +
-                "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>수정 및 재배포</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>폰트를 수정 후 재배포할 수 있습니다.<br>만일 그러할 경우 OFL-1.1을 채택해야 합니다.</p></p></td></tr>" +
+                "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>수정 및 재배포</p></td><td><p class='tYes'>O 가능<br><p class='tGray'>폰트를 수정 후 재배포할 수 있습니다.<br>만일 그러할 경우<a href='https://spdx.org/licenses/OFL-1.1.html'><u>OFL-1.1↗</u></a>을 채택해야 합니다.</p></p></td></tr>" +
                 "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>단독 판매</p></td><td><p class='tNo'>X 금지<br><p class='tGray'>폰트 파일을 단독으로 유료 판매하는 경우에 해당하며,<br>임베드 범주의 경우는 그러하지 않습니다.</p></p></td></tr>" +
                 "<tr><td style='vertical-align:top;padding-right: 50px;width:20%'><p>이용으로 인한 피해</p></td><td><p class='tNo'>X 책임지지 않음<br><p class='tGray'>폰트의 이용으로 인한 피해나 손해가 생기더라도 일절 책임지지 않습니다.</p></p></td></tr>" +
                 "</table></a>" +

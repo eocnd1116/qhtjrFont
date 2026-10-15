@@ -38,22 +38,28 @@ font0:
   size: 15
   sizePx: "20"
   range:
-    - Hangul
-    - Jamo
     - Ascii
+    - Hangul
     - OldHangul_hanyangPua
+    - Jamo
+    - Kanji_JIS_X_0208
   creator: "qhtjr1116"
   pangram: "* 난 조용한 것들을 보면 화가 치밀어."
   tool:
+    - ["", "제작"]
     - [https://github.com/exqt/pixel-font-maker, "pixel-font-maker", "exqt"]
     - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
     - [https://fontforge.org, "Fontforge", "George Williams"]
+    - ["", "옛한글"]
     - [https://github.com/eocnd1116/DeltaDotum_hanyangPUA, "[한양PUA] 구현 소스코드", "qhtjr1116"]
     - [https://github.com/newhajinyoon/yhhangul-tools, "[한양PUA] 옛한글 툴", "newhajinyoon"]
+    - ["", "한자"]
+    - [https://github.com/quiple/galmuri, "[JIS X 0208] 갈무리14", "quiple"]
   patch:
     - ["2026-07-31", "배포 시작"]
     - ["2026-09-23", "한양PUA 지원"]
-    - ["2026-09-23", "실수로 구버전 올려서 신버전 올림"]
+    - ["2026-10-15", "일부 완성형 글리프 수정"]
+    - ["2026-10-15", "CJK 통합 한자(JIS X 0208) 지원 by Galmuri14"]
 
 font1:
   goto: [1,1]
@@ -64,11 +70,12 @@ font1:
   size: 15
   sizePx: "20"
   range:
-    - Hangul
     - Ascii
+    - Hangul
   creator: "qhtjr1116"
   pangram: " 옛날 옛적 그림자를 따라 어떤 전설이 전해져 내려왔다."
   tool:
+    - ["", "제작"]
     - [https://github.com/exqt/pixel-font-maker, "pixel-font-maker", "exqt"]
     - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
     - [https://fontforge.org, "Fontforge", "George Williams"]
@@ -84,12 +91,13 @@ font2:
   size: 12
   sizePx: "16"
   range:
+    - Ascii
     - Hangul
     - Jamo
-    - Ascii
   creator: "qhtjr1116"
   pangram: "헌 쳇바퀴 탄 다람쥐는 흐물흐물~"
   tool:
+    - ["", "제작"]
     - [https://github.com/quiple/bithangul, "BitHangul", "quiple"]
     - [https://github.com/kreativekorp/bitsnpicas, "Bits'N'Picas", "Kreative Software"]
     - [https://sergilazaro.itch.io/pixelforge, "PixelForge", "Sergi Lazaro"]
@@ -103,21 +111,25 @@ font2:
 #   icoDir: 아이콘 .png 파일 위치
 
 rangeHangul:
-  name: "완성형 11,172자"
+  name: "완성형&nbsp; 11,172자"
   icoDir: "asset/icon/ico_hangul.png"
 
 rangeJamo:
-  name: "자모&nbsp; &nbsp; 51자"
+  name: "자모 &nbsp; &nbsp; 51자"
   icoDir: "asset/icon/ico_jamo.png"
 
 rangeAscii:
-  name: "ASCII &emsp;94자"
+  name: "ASCII  &emsp; 94자"
   icoDir: "asset/icon/ico_ascii.png"
 
-rangeOldHangul_mix:
-  name: "옛한글-첫가끝 &nbsp; 254자 (1,638,750자)"
+rangeOldHangul_hanyangPua:
+  name: "옛한글 &ensp;5,299자 (한양PUA)"
   icoDir: "asset/icon/ico_oldhangul.png"
 
-rangeOldHangul_hanyangPua:
-  name: "옛한글-한양PUA 5,299자"
+rangeOldHangul_mix:
+  name: "옛한글&nbsp;&ensp;254자 &emsp;(조합형)"
+  icoDir: "asset/icon/ico_oldhangul.png"
+
+rangeKanji_JIS_X_0208:
+  name: "한자 &nbsp; &nbsp; 6,355자 (JIS X 0208)"
   icoDir: "asset/icon/ico_oldhangul.png"
