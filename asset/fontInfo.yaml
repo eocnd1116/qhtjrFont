@@ -34,7 +34,7 @@ font0:
   nameKr: "델타돋움체"
   nameEn: "DeltaDotumKR"
   ttfDir: "asset/font/DeltaDotumKR.ttf"
-  info: "DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>윤디자인웹돋움의 스타일을 차용하면서도 뷁괧 같은 글자도 깔끔하게 지원하도록 해봤습니다."
+  info: "DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>기존에 사용하던 폰트에서 가시성을 높히고 깔끔하도록 디자인했습니다."
   size: 15
   sizePx: "20"
   range:
@@ -66,7 +66,7 @@ font1:
   nameKr: "델타글라스체"
   nameEn: "DeltaGlassKR"
   ttfDir: "asset/font/DeltaGlassKR.ttf"
-  info: "DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>고딕풍 세리프 디자인이면서 스테인드 글라스와 어울리도록 해봤습니다."
+  info: "DELTARUNE의 한국어 패치를 위해 제작된 폰트입니다.<br>고딕풍 세리프 디자인의 스테인드 글라스와 어울리도록 디자인했습니다."
   size: 15
   sizePx: "20"
   range:
@@ -87,7 +87,7 @@ font2:
   nameKr: "드림흐물체"
   nameEn: "DreamHeumulKR"
   ttfDir: "asset/font/DreamHeumulKR.ttf"
-  info: "갈무리 9의 구조를 빌려 만든 폰트입니다.<br>자유분방하면서 흐물거리는 필기체의 느낌을 재현해 보았습니다."
+  info: "갈무리 9의 구조를 빌려 만든 폰트입니다.<br>자유분방하면서 흐물거리는 필기체의 느낌을 재현하도록 디자인했습니다."
   size: 12
   sizePx: "16"
   range:
